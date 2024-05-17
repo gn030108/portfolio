@@ -1,0 +1,113 @@
+.component{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    max-width: 71.25rem;
+    height: 4.5rem;
+    padding: 1.25rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+}
+.left{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #453a33;
+    div{
+        cursor: pointer;
+    }
+}
+.wide{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #cdcdcd;
+    span{
+        margin-left: 1.5rem;
+        cursor: pointer;
+        &:hover{
+            color: #453a33;
+        }
+    }
+}
+.thin{
+    display: none;
+    align-items: center;
+    i{
+        font-size: 1.6rem;
+        border: 1px solid #453a33;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+.side_close{
+    display: none;
+    width: 70%;
+    height: 100vh;
+    background-color: #c0d0ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+.side{
+    display: none;
+    width: 70%;
+    height: 100vh;
+    background-color: #c0d0ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+}
+.side_icon{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.1rem 2rem;
+    i{
+        font-size: 1.6rem;
+        border: 1px solid #453a33;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+.side_menu{
+    margin-top: 10vh;
+    div{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        p{
+            width: fit-content;
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-bottom: 2px solid black;
+        }
+        &:hover{
+            transform: rotateZ(-4deg);
+        }
+    }
+}
+@media (max-width:768px) {
+    .component{
+        border-bottom: 1px solid black;
+    }
+    .thin{
+        display: flex;
+    }
+    .wide{
+        display: none;
+    }
+    .side_close{
+        display: block;
+    }
+    .side{
+        display: block;
+    }
+}

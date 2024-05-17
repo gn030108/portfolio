@@ -1,0 +1,30 @@
+.container{
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../image/배경.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+.box{
+  width: 80%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p{
+      margin: 0;
+  }
+}
+@media (max-width:1024px){
+  .container{
+    background-position: 80% ;
+  }
+}
+@media (max-width:480px){
+  .container{
+    background-position: 75% ;
+  }
+}
