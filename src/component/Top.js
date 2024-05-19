@@ -5,8 +5,8 @@ const Top = () => {
   return (
     <div className={styles.container}>
       <TypingText
-        text='안녕하세요? Frontend 개발자 박원우입니다.'
-        speed={170}
+        text=' 안녕하세요? Frontend 개발자 박원우입니다.'
+        speed={200}
         reverseSpeed={100}
         fontSize='1.6rem'
       />
