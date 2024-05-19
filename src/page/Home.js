@@ -9,7 +9,7 @@ import styles from '../styles/pageStyles/Home.module.scss'
 const Home = () => {
   return (
     <div>
-      <headers><Navbar/></headers>
+      <header><Navbar/></header>
       <main>
         <Top/>
         <About/>

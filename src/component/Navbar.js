@@ -21,7 +21,7 @@ const Navbar = () => {
         <span>Contact</span>
       </div>
       <div className={styles.thin}>
-        <i class="ri-menu-line" onClick={()=>(setHandleMenu(!handleMenu))}></i>
+        <i className="ri-menu-line" onClick={()=>(setHandleMenu(!handleMenu))}></i>
       </div>
       
       <div className={handleMenu? styles.side : styles.side_close}>
