@@ -1,0 +1,38 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.main{
+  li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-bottom: 20px;
+  }
+}
+.title{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.bar{
+  width: 800px;
+  border-radius: 5px;
+  background-color: #EFF0F0;
+  div{
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #D2DCFF;
+    border-radius: 0 15px 15px 0;
+    padding: 0 10px;
+  }
+  p{
+    font-size: 1.2rem;
+    float: right;
+  }
+}
