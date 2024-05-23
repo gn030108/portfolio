@@ -25,7 +25,7 @@ const Skill = () => {
             </div>
           </li>
           <li>
-            <div className={styles.title}>JAVASCRIPT</div>
+            <div className={styles.title}>JavaScript</div>
             <div className={styles.bar}>
               <div style={{width:'70%'}}>
                 <p>70%</p>
@@ -33,7 +33,7 @@ const Skill = () => {
             </div>
           </li>
           <li>
-            <div className={styles.title}>REACT</div>
+            <div className={styles.title}>React</div>
             <div className={styles.bar}>
               <div style={{width:'70%'}}>
                 <p>70%</p>
@@ -49,7 +49,7 @@ const Skill = () => {
             </div>
           </li>
           <li>
-            <div className={styles.title}>BOOTSTRAP</div>
+            <div className={styles.title}>BootStrap</div>
             <div className={styles.bar}>
               <div style={{width:'50%'}}>
                 <p>50%</p>
