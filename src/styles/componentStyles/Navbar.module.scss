@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    position: relative;
 }
 .left{
     font-size: 1.6rem;
@@ -46,7 +47,7 @@
     width: 70%;
     height: 100vh;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 10;
@@ -58,7 +59,7 @@
     width: 70%;
     height: 100vh;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 10;

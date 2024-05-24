@@ -9,12 +9,18 @@
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center ;
+  z-index: -1;
+  position: relative;
 }
 .type{
   height: 70px;
   margin-bottom: 10px;
   word-break: keep-all;
   font: inherit;
+  .ti-cursor {
+    z-index: -1; /* 커서의 z-index 값을 낮게 설정 */
+    position: relative; /* relative position 설정 */
+  }
 }
 .box{
   color: rgba(0, 0, 0, .7);
