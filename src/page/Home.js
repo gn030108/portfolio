@@ -1,5 +1,6 @@
 import About from '../component/About'
 import Navbar from '../component/Navbar'
+import Project from '../component/Project'
 import Skill from '../component/Skill'
 import Top from '../component/Top'
 
@@ -15,6 +16,7 @@ const Home = () => {
         <Top/>
         <About/>
         <Skill/>
+        <Project/>
       </main>
     </div>
   )

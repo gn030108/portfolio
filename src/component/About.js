@@ -1,5 +1,5 @@
 import 카리나 from '../image/카리나.png'
-import {ReactComponent as 졸업} from '../image/졸업1.svg'
+import {ReactComponent as 졸업} from '../image/svg/졸업1.svg'
 
 
 import styles from '../styles/componentStyles/About.module.scss'
