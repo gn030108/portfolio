@@ -9,7 +9,7 @@ const Skill = () => {
       <div className={styles.main}>
         <ul>
           <li>
-            <div className={styles.title}>HTML</div>
+            <div className={styles.title}>HTML5</div>
             <div className={styles.bar}>
               <div style={{width:'80%'}}>
                 <p>80%</p>
@@ -17,7 +17,7 @@ const Skill = () => {
             </div>
           </li>
           <li>
-            <div className={styles.title}>CSS</div>
+            <div className={styles.title}>CSS3</div>
             <div className={styles.bar}>
               <div style={{width:'80%'}}>
                 <p>80%</p>

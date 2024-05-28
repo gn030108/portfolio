@@ -32,7 +32,7 @@ const About = () => {
               <p>gn030108@gmail.com</p>
             </li>
             <li>
-              <졸업 style={{width:'20px',height:'20px',marginRight:'2rem',color:'#4C4C4C'}}/>
+              <졸업 className={styles.school}/>
               <p>동양미래대학교 (정보전자공학과)</p>
             </li>
             <li className={styles.profile_last}>
