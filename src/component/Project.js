@@ -4,11 +4,13 @@ import 스포티파이 from '../image/스포티파이.png'
 import 루이비통 from '../image/루이비통.png'
 import 당근마켓 from '../image/당근마켓.png'
 import 할일앱 from '../image/할일앱.png'
+import 게시판 from '../image/게시판.png'
+import 옷 from '../image/Cloop.png'
+import 포폴 from '../image/포폴.png'
 
 
 
-
-import styles from '../styles/componentStyles/Project.module.scss'
+import styles from '../styles/Project.module.scss'
 
 const Project = () => {
 
@@ -16,20 +18,12 @@ const Project = () => {
   const [projectList,setProjectList] = useState([
     {
       open:false,
-      title:'숫자 맞추기 게임',
-      content:'5번 안에 랜덤한 숫자를 맞추는 간단한 숫자 게임입니다.',
-      skill:'HTML5, javaScript',
-      image:숫자게임,
-      url:'https://pw2numbergame.netlify.app/',
-      code:'https://github.com/gn030108/coding/tree/main/%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84'},
-    {
-      open:false,
       title:'당근마켓 클론코딩',
       content:'당근마켓 홈페이지를 클론코딩했습니다',
       skill:'HTML5, CSS3',
       image:당근마켓,
-      url:'https://pw2numbergame.netlify.app/',
-      code:'https://github.com/gn030108/coding/tree/main/%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84'
+      url:'https://carrotmarketclone.netlify.app',
+      code:'https://github.com/gn030108/CarrotMarketClone'
     },
     {
       open:false,
@@ -37,24 +31,62 @@ const Project = () => {
       content:'스포티파이 홈페이지를 클론코딩했습니다.',
       skill:'HTML5, CSS3',
       image:스포티파이,
-      url:'https://pw2numbergame.netlify.app/',
-      code:'https://github.com/gn030108/coding/tree/main/%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84'
+      url:'https://pwwspotifyclone.netlify.app',
+      code:'https://github.com/gn030108/SpotifyClone'
     },
     {
       open:false,
       title:'루이비통 클론코딩',
       content:'루이비통 홈페이지를 클론코딩했습니다',
       skill:'HTML5, CSS3, BootStrap',
-      image:루이비통,url:'https://pw2numbergame.netlify.app/',
-      code:'https://github.com/gn030108/coding/tree/main/%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84'
+      image:루이비통,
+      url:'https://louisvuittonclone.netlify.app',
+      code:'https://github.com/gn030108/LouisVuittonClone'
+    },
+    {
+      open:false,
+      title:'숫자 맞추기 게임',
+      content:'5번 안에 랜덤한 숫자를 맞추는 간단한 숫자 게임입니다.',
+      skill:'HTML5, javaScript',
+      image:숫자게임,
+      url:'https://pw2numbergame.netlify.app/',
+      code:'https://github.com/gn030108/NumberGame'
     },
     {
       open:false,
       title:'할일 앱',
       content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
       skill:'HTML5, CSS3, JavaScript, BootStrap, ',
-      image:할일앱,url:'https://pw2numbergame.netlify.app/',
-      code:'https://github.com/gn030108/coding/tree/main/%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84'
+      image:할일앱,
+      url:'https://pwwtodoapp.netlify.app',
+      code:'https://github.com/gn030108/ToDoApp'
+    },
+    {
+      open:false,
+      title:'게시판',
+      content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
+      skill:'HTML5, CSS3, JavaScript, BootStrap, ',
+      image:게시판,
+      url:'https://pwwnoticeboard.netlify.app',
+      code:'https://github.com/gn030108/NoticeBoard'
+    },
+    {
+      open:false,
+      title:'Cloop, 옷가게',
+      content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
+      skill:'HTML5, CSS3, JavaScript, BootStrap, ',
+      image:옷,
+      url:'https://cloop.netlify.app',
+      code:'https://github.com/gn030108/website'
+    },
+    {
+      open:false,
+      title:'portfolio',
+      content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
+      skill:'HTML5, CSS3, JavaScript, BootStrap, ',
+      image:포폴,
+      url:'https://pwwportfolio.netlify.app',
+      code:'https://github.com/gn030108/portfolio'
     },
     // {open:false , title:'',content:'',image:'',url:'',code:''},
   ])
@@ -109,8 +141,11 @@ const Project = () => {
             <div>
               <div>{item.title}</div>
               <div>{item.content}</div>
-              <div>{item.title}</div>
-              <div>{item.title}</div>
+              <div>{item.skill}</div>
+              <div>
+                <button>Code</button>
+                <button>Site</button>
+              </div>
             </div>
           </div>
 

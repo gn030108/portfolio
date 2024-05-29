@@ -1,4 +1,4 @@
-import styles from '../styles/componentStyles/Top.module.scss'
+import styles from '../styles/Top.module.scss'
 import TypeIt from "typeit-react";
 
 const Top = () => {

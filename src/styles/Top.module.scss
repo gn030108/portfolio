@@ -5,11 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../../image/배경.jpg');
+  background-image: url('../image/배경.jpg');
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center ;
-  z-index: -1;
   position: relative;
 }
 .type{
@@ -18,7 +17,6 @@
   word-break: keep-all;
   font: inherit;
   .ti-cursor {
-    z-index: -1; /* 커서의 z-index 값을 낮게 설정 */
     position: relative; /* relative position 설정 */
   }
 }
@@ -43,5 +41,6 @@
 @media (max-width:480px){
   .container{
     background-position: 75% ;
+    height: 60vh;
   }
 }

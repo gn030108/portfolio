@@ -1,6 +1,6 @@
 
 
-import styles from '../styles/componentStyles/Skill.module.scss'
+import styles from '../styles/Skill.module.scss'
 
 const Skill = () => {
   return (
