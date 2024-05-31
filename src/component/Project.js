@@ -7,6 +7,7 @@ import 할일앱 from '../image/할일앱.png'
 import 게시판 from '../image/게시판.png'
 import 옷 from '../image/Cloop.png'
 import 포폴 from '../image/포폴.png'
+import 뉴스 from '../image/뉴스타임즈.png'
 
 
 
@@ -60,6 +61,15 @@ const Project = () => {
       image:할일앱,
       url:'https://pwwtodoapp.netlify.app',
       code:'https://github.com/gn030108/ToDoApp'
+    },
+    {
+      open:false,
+      title:'뉴스타임즈',
+      content:'News API를 이용하여 만든 웹사이트 입니다. [무료 Api Key를 사용하여 localhost에서만 작동합니다.]',
+      skill:'HTML5, CSS3, JavaScript, BootStrap, API, pagination',
+      image:뉴스,
+      url:'https://pwwnewstimes.netlify.app',
+      code:'https://github.com/gn030108/newstimes'
     },
     {
       open:false,
