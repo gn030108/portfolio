@@ -10,7 +10,7 @@ const Top = () => {
       <div className={styles.box}>
         <div className={styles.type}>
           <TypeIt options={{
-            strings: ["안녕하세요 : > <br/>주니어 Frontend 개발자 박원우입니다."],
+            strings: ["안녕하세요 : > <br/> 신입 Frontend 개발자 박원우입니다."],
             speed: 100,
             loop: true,
             loopDelay: [2500],

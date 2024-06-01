@@ -23,7 +23,7 @@ const Project = () => {
       content:'당근마켓 홈페이지를 클론코딩했습니다',
       skill:'HTML5, CSS3',
       image:당근마켓,
-      url:'https://carrotmarketclone.netlify.app',
+      site:'https://carrotmarketclone.netlify.app',
       code:'https://github.com/gn030108/CarrotMarketClone'
     },
     {
@@ -32,7 +32,7 @@ const Project = () => {
       content:'스포티파이 홈페이지를 클론코딩했습니다.',
       skill:'HTML5, CSS3',
       image:스포티파이,
-      url:'https://pwwspotifyclone.netlify.app',
+      site:'https://pwwspotifyclone.netlify.app',
       code:'https://github.com/gn030108/SpotifyClone'
     },
     {
@@ -41,7 +41,7 @@ const Project = () => {
       content:'루이비통 홈페이지를 클론코딩했습니다',
       skill:'HTML5, CSS3, BootStrap',
       image:루이비통,
-      url:'https://louisvuittonclone.netlify.app',
+      site:'https://louisvuittonclone.netlify.app',
       code:'https://github.com/gn030108/LouisVuittonClone'
     },
     {
@@ -50,7 +50,7 @@ const Project = () => {
       content:'5번 안에 랜덤한 숫자를 맞추는 간단한 숫자 게임입니다.',
       skill:'HTML5, javaScript',
       image:숫자게임,
-      url:'https://pw2numbergame.netlify.app/',
+      site:'https://pw2numbergame.netlify.app/',
       code:'https://github.com/gn030108/NumberGame'
     },
     {
@@ -59,7 +59,7 @@ const Project = () => {
       content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
       skill:'HTML5, CSS3, JavaScript, BootStrap, ',
       image:할일앱,
-      url:'https://pwwtodoapp.netlify.app',
+      site:'https://pwwtodoapp.netlify.app',
       code:'https://github.com/gn030108/ToDoApp'
     },
     {
@@ -68,7 +68,7 @@ const Project = () => {
       content:'News API를 이용하여 만든 웹사이트 입니다. [무료 Api Key를 사용하여 localhost에서만 작동합니다.]',
       skill:'HTML5, CSS3, JavaScript, BootStrap, API, pagination',
       image:뉴스,
-      url:'https://pwwnewstimes.netlify.app',
+      site:'https://pwwnewstimes.netlify.app',
       code:'https://github.com/gn030108/newstimes'
     },
     {
@@ -77,7 +77,7 @@ const Project = () => {
       content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
       skill:'HTML5, CSS3, JavaScript, BootStrap, ',
       image:게시판,
-      url:'https://pwwnoticeboard.netlify.app',
+      site:'https://pwwnoticeboard.netlify.app',
       code:'https://github.com/gn030108/NoticeBoard'
     },
     {
@@ -86,7 +86,7 @@ const Project = () => {
       content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
       skill:'HTML5, CSS3, JavaScript, BootStrap, ',
       image:옷,
-      url:'https://cloop.netlify.app',
+      site:'https://cloop.netlify.app',
       code:'https://github.com/gn030108/website'
     },
     {
@@ -95,7 +95,7 @@ const Project = () => {
       content:'할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다',
       skill:'HTML5, CSS3, JavaScript, BootStrap, ',
       image:포폴,
-      url:'https://pwwportfolio.netlify.app',
+      site:'https://pwwportfolio.netlify.app',
       code:'https://github.com/gn030108/portfolio'
     },
     // {open:false , title:'',content:'',image:'',url:'',code:''},
@@ -148,13 +148,21 @@ const Project = () => {
           <div className={styles.project_front} style={{backgroundImage:`url(${item.image})`}}></div> 
 
           <div className={styles.project_back}>
-            <div>
-              <div>{item.title}</div>
-              <div>{item.content}</div>
-              <div>{item.skill}</div>
-              <div>
-                <button>Code</button>
-                <button>Site</button>
+            <div className={styles.project_back_div}>
+              <div className={styles.project_back_title}>
+                <div>{item.title}</div>
+              </div>
+              <div className={styles.project_back_content}>
+                <div>description</div>
+                <div>{item.content}</div>
+              </div>
+              <div className={styles.project_back_skill}>
+                <div>Skill</div>
+                <div>{item.skill}</div>
+              </div>
+              <div className={styles.project_back_btn}>
+                <a href={item.code} ><button>Code</button></a>
+                <a href={item.site}><button>Site</button></a>
               </div>
             </div>
           </div>
