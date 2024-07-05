@@ -119,7 +119,7 @@ const Project = () => {
       skill:
         "javaScript, React, BootStrap,  Scss, React Hook, Router, Axios, Redux,Pagination",
       image: 넷플릭스,
-      site: "https://pww-netflix.netlify.app",
+      site: "https://movie-pww.netlify.app",
       code: "https://github.com/gn030108/Netflix",
     },
     {
