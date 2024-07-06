@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,82 +8,88 @@
   border-bottom: 2px dashed #cdcdcd;
   border-top: 2px dashed #cdcdcd;
 }
-.header{
+.header {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.main{
+.main {
   width: inherit;
-  ul{
+  ul {
     margin: 30px;
     width: 100%;
   }
-  li{
-    list-style-type: none;  
+  li {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
     width: inherit;
     margin-bottom: 20px;
   }
 }
-.title{
+.title {
   font-size: 1.4rem;
   font-weight: 500;
   width: 120px;
   text-align: start;
 }
-.bar{
+.bar {
   width: 80%;
+  height: 2rem;
   border-radius: 5px;
-  background-color: #EFF0F0;
-  div{
+  background-color: #eff0f0;
+  div {
     box-sizing: border-box;
     height: 100%;
-    background-color: #D2DCFF;
+    background-color: #d2dcff;
     border-radius: 0 15px 15px 0;
     padding: 0 10px;
   }
-  p{
+  p {
     font-size: 1.2rem;
     float: right;
+    margin: 0;
   }
 }
 @media (max-width: 1024px) {
-  .main{
-    ul{
+  .main {
+    ul {
       padding: 0;
       margin: 10px 0;
     }
-    .bar{
+    .bar {
       width: 78%;
     }
   }
-  
 }
 @media (max-width: 786px) {
-  .main{
+  .main {
     width: 100%;
-    ul{
+    ul {
       width: 100%;
     }
-    li{
+    li {
       width: auto;
     }
   }
-  .title{
+  .title {
     font-size: 1rem;
     width: 80px;
   }
-  .bar{
+  .bar {
     width: 75%;
-    p{
+    p {
       font-size: 1rem;
     }
   }
 }
 @media (max-width: 320px) {
-  .title{
+  .title {
     font-size: 0.7rem;
     width: 60px;
+  }
+  .bar {
+    p {
+      font-size: 0.7rem;
+    }
   }
 }
