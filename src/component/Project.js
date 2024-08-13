@@ -1,18 +1,12 @@
 import { useState } from "react";
-import 숫자게임 from "../image/숫자게임.png";
 import 스포티파이 from "../image/스포티파이.png";
 import 루이비통 from "../image/루이비통.png";
-import 당근마켓 from "../image/당근마켓.png";
 import 할일앱 from "../image/할일앱.png";
-import 게시판 from "../image/게시판.png";
 import 옷 from "../image/Cloop.png";
 import 포폴 from "../image/포폴.png";
 import 뉴스 from "../image/뉴스타임즈.png";
-import 가위바위보 from "../image/가위바위보.png";
-import 날씨 from "../image/날씨.png";
 import HnM from "../image/HnM.png";
 import 넷플릭스 from "../image/넷플릭스.png";
-
 import styles from "../styles/Project.module.scss";
 
 const Project = () => {
@@ -61,45 +55,6 @@ const Project = () => {
     },
     {
       open: false,
-      title: "날씨 앱",
-      content: "현제 위치 및 3개의 지정한 도시의 날씨를 알려주는 앱입니다.",
-      skill: "javaScript, React, BootStrap, API",
-      image: 날씨,
-      site: "https://pwwweather-app.netlify.app",
-      code: "https://github.com/gn030108/weather-app",
-    },
-    {
-      open: false,
-      title: "게시판",
-      content:
-        "글을 올릴수 있게 만든 게시판 사이트 입니다. [백엔드서버와의 연결은 로컬에서만 가능합니다.]",
-      skill: "javaScript, React, redux, scss, axios, Pagination",
-      image: 게시판,
-      site: "https://pwwnoticeboard.netlify.app",
-      code: "https://github.com/gn030108/NoticeBoard",
-    }, //사이트랑 코드주소 수정
-    {
-      open: false,
-      title: "가위바위보 게임",
-      content: "컴퓨터와 가위바위보를 하는 간단한 게임입니다.",
-      skill: "javaScript, React",
-      image: 가위바위보,
-      site: "https://pwwrsp-game.netlify.app/",
-      code: "https://github.com/gn030108/RSP-Game",
-    }, //사이트랑 코드주소 수정
-
-    {
-      open: false,
-      title: "뉴스타임즈",
-      content:
-        "News API를 이용하여 만든 웹사이트 입니다. [무료 Api Key를 사용하여 localhost에서만 작동합니다.]",
-      skill: "HTML5, CSS3, JavaScript, BootStrap, API, Pagination",
-      image: 뉴스,
-      site: "https://pwwnewstimes.netlify.app",
-      code: "https://github.com/gn030108/newstimes",
-    },
-    {
-      open: false,
       title: "할일 앱",
       content: "할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다",
       skill: "HTML5, CSS3, JavaScript, BootStrap, ",
@@ -107,44 +62,6 @@ const Project = () => {
       site: "https://pwwtodoapp.netlify.app",
       code: "https://github.com/gn030108/ToDoApp",
     },
-    {
-      open: false,
-      title: "숫자 맞추기 게임",
-      content: "5번 안에 랜덤한 숫자를 맞추는 간단한 숫자 게임입니다.",
-      skill: "HTML5, javaScript",
-      image: 숫자게임,
-      site: "https://pw2numbergame.netlify.app/",
-      code: "https://github.com/gn030108/NumberGame",
-    },
-    {
-      open: false,
-      title: "루이비통 클론코딩",
-      content: "루이비통 홈페이지를 클론코딩했습니다.",
-      skill: "HTML5, CSS3, BootStrap",
-      image: 루이비통,
-      site: "https://louisvuittonclone.netlify.app",
-      code: "https://github.com/gn030108/LouisVuittonClone",
-    },
-    {
-      open: false,
-      title: "스포티파이 클론코딩",
-      content: "스포티파이 홈페이지를 클론코딩했습니다.",
-      skill: "HTML5, CSS3",
-      image: 스포티파이,
-      site: "https://pwwspotifyclone.netlify.app",
-      code: "https://github.com/gn030108/SpotifyClone",
-    },
-
-    {
-      open: false,
-      title: "당근마켓 클론코딩",
-      content: "당근마켓 홈페이지를 클론코딩했습니다.",
-      skill: "HTML5, CSS3",
-      image: 당근마켓,
-      site: "https://carrotmarketclone.netlify.app",
-      code: "https://github.com/gn030108/CarrotMarketClone",
-    },
-    // {open:false , title:'',content:'',image:'',url:'',code:''},
   ]);
 
   const handleOpen = (index) => {

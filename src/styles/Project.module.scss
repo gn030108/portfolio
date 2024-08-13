@@ -29,7 +29,7 @@
   display: grid;
   gap: 10px 10px;
   grid-auto-rows: 300px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   justify-items: center;
   margin: 20px auto 0;
@@ -62,9 +62,6 @@
   background-repeat: no-repeat;
 }
 .project_back {
-  background-image: url(https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  background-repeat: no-repeat;
   font-size: 12px;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);

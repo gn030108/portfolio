@@ -1,65 +1,44 @@
+import html from "../image/svg/icon_html.svg";
+import css from "../image/svg/icon_css.svg";
+import js from "../image/svg/icon_javascript.svg";
+import react from "../image/svg/icon_react.svg";
+import bootstrap from "../image/svg/icon_bootstrap.svg";
+import redux from "../image/svg/icon_redux.svg";
+import jquery from "../image/svg/icon_jquery.svg";
 
-
-import styles from '../styles/Skill.module.scss'
+import git from "../image/svg/icon_github.svg";
+import discord from "../image/svg/icon_discord.svg";
+import notion from "../image/svg/icon_notion.svg";
+import styles from "../styles/Skill.module.scss";
 
 const Skill = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>Skills</div>
       <div className={styles.main}>
-        <ul>
-          <li>
-            <div className={styles.title}>HTML5</div>
-            <div className={styles.bar}>
-              <div style={{width:'80%'}}>
-                <p>80%</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className={styles.title}>CSS3</div>
-            <div className={styles.bar}>
-              <div style={{width:'80%'}}>
-                <p>80%</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className={styles.title}>JavaScript</div>
-            <div className={styles.bar}>
-              <div style={{width:'70%'}}>
-                <p>70%</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className={styles.title}>React</div>
-            <div className={styles.bar}>
-              <div style={{width:'70%'}}>
-                <p>70%</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className={styles.title}>SCSS</div>
-            <div className={styles.bar}>
-              <div style={{width:'75%'}}>
-                <p>75%</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className={styles.title}>BootStrap</div>
-            <div className={styles.bar}>
-              <div style={{width:'50%'}}>
-                <p>50%</p>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div className={styles.box}>
+          <label>Frontend</label>
+          <div className={styles.frontend_skill}>
+            <img src={html} alt="html" />
+            <img src={css} alt="css" />
+            <img src={js} alt="js" />
+            <img src={react} alt="react" />
+            <img src={bootstrap} alt="bootstrap" />
+            <img src={redux} alt="redux" />
+            <img src={jquery} alt="jquery" />
+          </div>
+        </div>
+        <div className={styles.box}>
+          <label>Cooperation</label>
+          <div className={styles.frontend_skill}>
+            <img src={git} alt="git" />
+            <img src={discord} alt="discord" />
+            <img src={notion} alt="notion" />
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Skill
+export default Skill;
