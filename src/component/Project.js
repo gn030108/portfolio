@@ -10,7 +10,7 @@ import 넷플릭스 from "../image/넷플릭스.png";
 import styles from "../styles/Project.module.scss";
 
 const Project = () => {
-  const [catchAll, setCatchAll] = useState(false);
+  const [showList, setShowList] = useState();
   const [projectList, setProjectList] = useState([
     {
       open: false,
@@ -34,7 +34,7 @@ const Project = () => {
     },
     {
       open: false,
-      title: "Cloop, 옷가게",
+      title: "Cloop, 옷가게 사이트",
       content:
         "옷을 사고 팔 수 있게 만든 옷가게 사이트 입니다. 판매자와 일반회원으로 나눠서 로그인 후 이용 할 수 있습니다.",
       skill:
@@ -45,7 +45,7 @@ const Project = () => {
     },
     {
       open: false,
-      title: "H&M",
+      title: "H&M 클론코딩",
       content:
         "H&M 홈페이지를 클론코딩한 사이트 입니다. json서버를 이용하여 이미지와 가격등을 가져왔습니다.",
       skill: "javaScript, React, BootStrap, API, json.server",
@@ -55,7 +55,7 @@ const Project = () => {
     },
     {
       open: false,
-      title: "할일 앱",
+      title: "To do List",
       content: "할일을 기록하고 완료,삭제 하는 기능을 넣은 To Do List 입니다",
       skill: "HTML5, CSS3, JavaScript, BootStrap, ",
       image: 할일앱,
@@ -64,79 +64,73 @@ const Project = () => {
     },
   ]);
 
-  const handleOpen = (index) => {
-    setProjectList((prevList) =>
-      prevList.map(
-        (item, i) =>
-          // 조건부 open 변경
-          ({ ...item, open: i === index ? !item.open : false })
-        // i === index ? { ...item, open: !item.open } : item
-      )
-    );
-    console.log("실행");
+  const handleModal = (item) => {
+    document.body.style.overflow = "hidden";
+    setShowList(item);
+    console.log(showList);
   };
 
-  const handleOpenAll = () => {
-    setProjectList((prevList) =>
-      prevList.map((item) => ({ ...item, open: true }))
-    );
-    setCatchAll(true);
-  };
-  const handleCloseAll = () => {
-    setProjectList((prevList) =>
-      prevList.map((item) => ({ ...item, open: false }))
-    );
-    setCatchAll(false);
+  const closeModal = () => {
+    document.body.style.overflow = "auto";
+    setShowList(null);
+    console.log("리스트 비우기");
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>Project</div>
-      <div className={styles.button}>
-        <button onClick={catchAll ? handleCloseAll : handleOpenAll}>
-          {catchAll ? "Close All" : "Open All"}
-        </button>
-      </div>
       <div className={styles.grid}>
         {projectList.map((item, index) => (
           <div
-            className={`${styles.project_item} ${
-              item.open === true ? styles.flipped : ""
-            }`}
+            className={styles.project_item}
             key={index}
-            onClick={() => handleOpen(index)}
+            style={{ backgroundImage: `url(${item.image})` }}
+            onClick={() => handleModal(item)}
           >
-            <div
-              className={styles.project_front}
-              style={{ backgroundImage: `url(${item.image})` }}
-            ></div>
-
-            <div className={styles.project_back}>
-              <div className={styles.project_back_div}>
-                <div className={styles.project_back_title}>
-                  <div>{item.title}</div>
-                </div>
-                <div className={styles.project_back_content}>
-                  <div>description</div>
-                  <div>{item.content}</div>
-                </div>
-                <div className={styles.project_back_skill}>
-                  <div>Skill</div>
-                  <div>{item.skill}</div>
-                </div>
-                <div className={styles.project_back_btn}>
-                  <a href={item.code}>
-                    <button>Code</button>
-                  </a>
-                  <a href={item.site}>
-                    <button>Site</button>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <div>{item.title}</div>
           </div>
         ))}
       </div>
+      {showList && (
+        <>
+          <div className={styles.modal_back}></div>
+          <div className={styles.modal}>
+            <div className={styles.close_btn} onClick={() => closeModal()}>
+              <i class="ri-close-fill"></i>
+            </div>
+            <div className={styles.modal_img}>
+              <img src={showList.image} />
+            </div>
+            <div className={styles.modal_main}>
+              <h2>{showList.title}</h2>
+              <div className={styles.modal_sub}>
+                <div>
+                  <i class="ri-dice-1-line"></i>
+                  <p>Description</p>
+                </div>
+                <p>{showList.content}</p>
+              </div>
+              <div className={styles.modal_sub}>
+                <div>
+                  <i class="ri-dice-2-line"></i>
+                  <p>Use Skill</p>
+                </div>
+                <p>{showList.skill}</p>
+              </div>
+              <div className={styles.modal_line}>
+                <i class="ri-dice-3-line"></i>
+                <p> Site :</p>
+                <a href={showList.site}>{showList.site}</a>
+              </div>
+              <div className={styles.modal_line}>
+                <i class="ri-dice-4-line"></i>
+                <p>GitHub :</p>
+                <a href={showList.code}>{showList.code}</a>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

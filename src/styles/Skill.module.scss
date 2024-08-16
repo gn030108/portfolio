@@ -5,8 +5,8 @@
   margin: auto;
   padding: 40px 0;
   width: 80%;
-  border-bottom: 2px dashed #cdcdcd;
-  border-top: 2px dashed #cdcdcd;
+  border-bottom: 2px dashed #d2dcff;
+  border-top: 2px dashed #d2dcff;
 }
 .header {
   font-size: 1.5rem;
@@ -46,13 +46,19 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .main {
+    flex-wrap: wrap;
   }
-}
-@media (max-width: 786px) {
-  .main {
-    width: 100%;
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  .frontend_skill {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 320px) {
