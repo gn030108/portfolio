@@ -121,11 +121,18 @@ const Project = () => {
                 <i class="ri-dice-3-line"></i>
                 <p> Site :</p>
                 <a href={showList.site}>{showList.site}</a>
+                <a href={showList.site}>
+                  {" "}
+                  <button>site</button>
+                </a>
               </div>
               <div className={styles.modal_line}>
                 <i class="ri-dice-4-line"></i>
                 <p>GitHub :</p>
                 <a href={showList.code}>{showList.code}</a>
+                <a href={showList.code}>
+                  <button>code</button>
+                </a>
               </div>
             </div>
           </div>

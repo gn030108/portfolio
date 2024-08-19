@@ -59,7 +59,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modal {
-  width: 45%;
+  width: 70%;
   max-width: 720px;
   height: 65%;
   position: fixed;
@@ -130,10 +130,28 @@
   p {
     font-weight: 400;
   }
-  a {
+  a:nth-of-type(1) {
     margin-left: 1rem;
     text-decoration: none;
     color: #7592fb;
+  }
+  a:nth-of-type(2) {
+    display: none;
+    margin-left: 1rem;
+    width: 60%;
+    height: 2rem;
+    button {
+      border: 1px solid #7592fb;
+      border-radius: 15px;
+      outline: none;
+      background-color: white;
+      color: black;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        background-color: #d2dcff;
+      }
+    }
   }
 }
 
@@ -155,6 +173,9 @@
   .project_item {
     width: 75%;
   }
+  .modal {
+    width: 80%;
+  }
 }
 /* 모바일 가로 & 태블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 767px) {
@@ -162,6 +183,24 @@
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
     gap: 25px 10px;
+    grid-auto-rows: 400px;
+  }
+  .modal {
+    width: 75%;
+    height: 60%;
+  }
+  .modal_line {
+    margin-bottom: 1rem;
+    p {
+      width: 15%;
+      min-width: 70px;
+    }
+    a:nth-of-type(1) {
+      display: none;
+    }
+    a:nth-of-type(2) {
+      display: block;
+    }
   }
 }
 /* 모바일 세로 (해상도 ~ 479px)*/
@@ -174,5 +213,29 @@
   .project_item {
     width: 80%;
     height: 240px;
+    &:hover {
+      div {
+        width: 100%;
+      }
+    }
+  }
+  .modal {
+    height: auto;
+    max-height: 80%;
+  }
+  .modal_sub {
+    margin-bottom: 1rem;
+  }
+  .modal_line {
+    margin-bottom: 1rem;
+    p {
+      display: none;
+    }
+    a:nth-of-type(1) {
+      display: none;
+    }
+    a:nth-of-type(2) {
+      display: block;
+    }
   }
 }
