@@ -25,4 +25,4 @@
 
 - Demo : [https://pwwtodoapp.netlify.app](https://pwwportfolio.netlify.app)
 
-<div align="center"><img src="https://github.com/user-attachments/assets/071d3cc5-a5bf-498f-b6ae-d08f1dffda5f" height="350"></div>
+<div align="center"><img src="https://github.com/user-attachments/assets/071d3cc5-a5bf-498f-b6ae-d08f1dffda5f" height="500"></div>
