@@ -11,6 +11,7 @@ import styles from "../styles/Project.module.scss";
 
 const Project = () => {
   const [showList, setShowList] = useState();
+  //프로젝트 내용 및 설명
   const [projectList, setProjectList] = useState([
     {
       open: false,
@@ -122,7 +123,6 @@ const Project = () => {
                 <p> Site :</p>
                 <a href={showList.site}>{showList.site}</a>
                 <a href={showList.site}>
-                  {" "}
                   <button>site</button>
                 </a>
               </div>

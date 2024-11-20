@@ -61,7 +61,7 @@
 .modal {
   width: 70%;
   max-width: 720px;
-  height: 65%;
+  min-height: 65%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -187,7 +187,7 @@
   }
   .modal {
     width: 75%;
-    height: 60%;
+    min-height: 60%;
   }
   .modal_line {
     margin-bottom: 1rem;
@@ -222,6 +222,7 @@
   .modal {
     height: auto;
     max-height: 85%;
+    min-height: auto;
   }
   .modal_sub {
     margin-bottom: 1rem;
