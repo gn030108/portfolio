@@ -36,6 +36,12 @@ const About = () => {
               <i className="ri-github-fill"></i>
               <a href="https://github.com/gn030108">GitHub</a>
             </li>
+            <li>
+              <i class="ri-notion-fill"></i>
+              <a href="https://www.notion.so/1702af05a7ee8059b332eec9572de198?pvs=4">
+                Notion
+              </a>
+            </li>
           </div>
         </div>
       </div>
