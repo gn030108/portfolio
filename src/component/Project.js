@@ -94,11 +94,8 @@ const Project = () => {
       </div>
       {showList && (
         <>
-          <div className={styles.modal_back}></div>
+          <div className={styles.modal_back} onClick={() => closeModal()}></div>
           <div className={styles.modal}>
-            <div className={styles.close_btn} onClick={() => closeModal()}>
-              <i class="ri-close-fill"></i>
-            </div>
             <div className={styles.modal_img}>
               <img src={showList.image} />
             </div>
